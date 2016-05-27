@@ -1,0 +1,96 @@
+/* ============================================
+===============================================
+Authors & copyright: (c) 2016 LemaxDigital.com | bingoCardsGenerator.css - MIT License
+===============================================
+=============================================== */
+
+#resultBtn{
+    -webkit-animation: changeBkColor 2s infinite; /* Chrome, Safari, Opera */
+    animation: changeBkColor  2s  infinite;
+}
+#cardString, #cardStringBtn, #markedNumber, #markedNumberBtn{
+	margin-bottom: 15px;
+}
+/* For Chrome, Safari, Opera */
+@-webkit-keyframes changeBkColor {
+    from {background-color: #FFFFFF;}
+    to {background-color: #51BBE4;}
+}
+@keyframes changeBkColor {
+    from {background-color: #FFFFFF;}
+    to {background-color: #51BBE4;}
+}
+#resultBtn:hover{
+	background-color:#51BBE4;
+}
+#displayedNumber{
+	border-style: outset;
+	height: 100px;
+	width: 110px;
+	padding: 5px;	
+	margin: 10px auto;
+}
+#viewsSection #displayedNumberText{
+	font-size: 80px;
+	margin-top: 25px;
+	font-weight: bold;
+}
+#viewsSection #markedNumber{
+	font-weight: bold;
+	margin: 0;
+}
+table {
+	margin: 15px auto;
+}
+td{    
+    padding:10px;
+    width:30px;
+    height:30px;
+	font-size: 18px;
+    color:#000;
+    background-color:#fff;
+    border:2px solid #000;
+}
+body table tr td {
+	height: 60px;
+    width: 60px;
+}
+caption{
+	color:#FFFFFF;
+	font-size: 18px;
+	text-align: center;	
+	font-weight: bold;
+}
+td:hover {
+	background-color:#000;
+	color: #FFF;
+}
+td.stats{
+	color:#FFFFFF;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 40px;
+	height: 100%;
+    background-size: 100% 100%;
+}
+.selected{	
+	font-weight: bold;
+	color: #FFF;
+    background-color:#53A953;
+}
+.fifteenToGo{	
+    background-color: #E4000F;
+}
+.tenToGo{
+    background-color:#FF6600;
+}
+.fiveToGo{
+    background-color:#8AAAD9;
+}
+.bingo{
+    background-color:#53A953;	
+	font-size: 20px;
+}
+.bingo .statsText{	
+	font-size: 18px;
+}
