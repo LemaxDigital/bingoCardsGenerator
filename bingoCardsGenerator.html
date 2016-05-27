@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-UK" class="no-js">
+	<head>
+		<!-- ==============================================
+		===================================================
+		Authors & copyright: (c) 2016 LemaxDigital.com | Bingo Cards Generator app - MIT License
+		===================================================
+		=============================================== -->
+		
+		<!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
+		<title>Lemax Digital | Bingo Cards Generator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Author" content="LEMAXDIGITAL" />
+
+		<!-- ==============================================
+		CSS
+		=============================================== -->    
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/lemaxdigital.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/bingoCardsGenerator.css">
+		
+		
+		<!-- ==============================================
+		Fonts
+		=============================================== -->
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+					
+		<!-- ==============================================
+		JS
+		=============================================== -->
+			
+		<!--[if lt IE 9]>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript" src="js/modernizr.min.js"></script>
+		
+	</head>
+  
+	<body data-spy="scroll" data-target="#main-nav" data-offset="200">
+
+		<!-- ==============================================
+		MAIN NAV
+		=============================================== -->
+		<div id="main-nav" class="navbar navbar-fixed-top">
+			<div class="container">
+			
+				<div class="navbar-header">
+				
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					
+					<!-- ======= LOGO ========-->
+					<a class="navbar-brand" href="http://lemaxdigital.com">LEMAX DIGITAL<br><span>Developing websites, Creating value</span></a>
+				
+				</div>				
+				
+				<div id="site-nav" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="http://lemaxdigital.com">LemaxDigital.com</a>
+						</li>
+						<li>
+							<a href="http://github.com">GitHub</a>
+						</li>
+					</ul>
+				</div><!--End navbar-collapse -->
+								
+			</div><!--End container -->
+			
+		</div><!--End main-nav -->
+		
+		<!-- ==============================================
+		MAIN CONTENT
+		=============================================== -->	
+		
+		<section id="viewsSection">
+
+			<div class="container">			
+				<h1 class="section-title scale-in">The <span>Bingo Cards</span> Generator</h1>
+				
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<button type="button" id="cardStringBtn" class="btn btn-primary" data-toggle="collapse" data-target="#cardString">See Bingo Card String</button>
+						<button type="button" id="markedNumberBtn" class="btn btn-primary" data-toggle="collapse" data-target="#markedNumber">See Marked numbers</button>
+						<br/>
+						<div id="cardString" class="collapse wordWrap">
+							<strong>6 Bingo Cards have been generated from the following card string:</strong> 011722475204365360702637497481233455758302154058881928446789061241507324334876840738576186051132437816395663800818206590104559628214294664710935667287132130687703253151692742547985
+						</div>
+						<div class="collapse wordWrap" id="markedNumber">Marked numbers: 00</div>
+						<button type="button" id="resultBtn" class="btn btn-default btn-lg" onclick="getNewNumber()">Get a new Number!</button>	
+						<br/>
+						<div id="displayedNumber">
+							<p id="displayedNumberText">00</p>
+						</div>
+					</div>					
+				</div><!--End row -->
+				
+					
+				<div class="text-center"><!--All Bingo Cards -->
+					<div class="row">
+						<div class="col-md-12">
+						<!-- Bingo card number1 -->
+							<table>
+								<caption>Bingo card 1</caption>
+								<tr>
+									<td id="btc1">&nbsp;</td>
+									<td id="btc2">&nbsp;</td>
+									<td id="btc3">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc4">&nbsp;</td>
+									<td id="btc5">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="test">&nbsp;</td>
+									<td rowspan="3" class="stats"> <span class="statsText">&nbsp;</span></td>
+								</tr>	
+								<tr>
+									<td id="btc6">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc7">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc8">&nbsp;</td>
+									<td id="btc9">&nbsp;</td>
+									<td id="btc10">&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>	
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc11">&nbsp;</td>
+									<td id="btc12">&nbsp;</td>
+									<td id="btc13">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc14">&nbsp;</td>
+									<td id="btc15">&nbsp;</td>
+								</tr>							
+							</table>
+						</div>				
+						<div class="col-md-12">
+							<!-- Bingo card number2 -->						
+							<table>
+								<caption>Bingo card 2</caption>
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc16">&nbsp;</td>
+									<td id="btc17">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc18">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc19">&nbsp;</td>
+									<td id="btc20">&nbsp;</td>
+									<td rowspan="3" class="stats"> <span class="statsText">&nbsp;</span></td>
+								</tr>	
+								<tr>
+									<td id="btc21">&nbsp;</td>
+									<td id="btc22">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc23">&nbsp;</td>
+									<td id="btc24">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc25">&nbsp;</td>
+								</tr>	
+								<tr>
+									<td>&nbsp;</td>
+									<td id="btc26">&nbsp;</td>
+									<td id="btc27">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc28">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc29">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc30">&nbsp;</td>
+								</tr>							
+							</table>
+						</div>
+					</div>
+					
+					<div class="row">	
+						<div class="col-md-12">						
+							<!-- Bingo card number3 -->						
+							<table>
+								<caption>Bingo card 3</caption>
+								<tr>
+									<td id="btc31">&nbsp;</td>
+									<td id="btc32">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc33">&nbsp;</td>
+									<td id="btc34">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc35">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td rowspan="3" class="stats"> <span class="statsText">&nbsp;</span></td>
+								</tr>	
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc36">&nbsp;</td>
+									<td id="btc37">&nbsp;</td>
+									<td id="btc38">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc39">&nbsp;</td>
+									<td id="btc40">&nbsp;</td>
+								</tr>	
+								<tr>
+									<td id="btc41">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc42">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc43">&nbsp;</td>
+									<td id="btc44">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc45">&nbsp;</td>
+								</tr>							
+							</table>
+						</div>				
+						<div class="col-md-12">						
+							<!-- Bingo card number4 -->						
+							<table>
+								<caption>Bingo card 4</caption>
+								<tr>
+									<td id="btc46">&nbsp;</td>
+									<td id="btc47">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc48">&nbsp;</td>
+									<td id="btc49">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc50">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td rowspan="3" class="stats"> <span class="statsText">&nbsp;</span></td>
+								</tr>	
+								<tr>
+									<td>&nbsp;</td>
+									<td id="btc51">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc52">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc53">&nbsp;</td>
+									<td id="btc54">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc55">&nbsp;</td>
+								</tr>	
+								<tr>
+									<td id="btc56">&nbsp;</td>
+									<td id="btc57">&nbsp;</td>
+									<td id="btc58">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc59">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc60">&nbsp;</td>
+								</tr>							
+							</table>
+						</div>
+					</div>
+					
+					<div class="row">	
+						<div  class="col-md-12">
+							<!-- Bingo card number5 -->						
+							<table>
+								<caption>Bingo card 5</caption>
+								<tr>
+									<td>&nbsp;</td>
+									<td id="btc61">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc62">&nbsp;</td>
+									<td id="btc63">&nbsp;</td>
+									<td id="btc64">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc65">&nbsp;</td>
+									<td rowspan="3" class="stats"> <span class="statsText">&nbsp;</span></td>
+								</tr>	
+								<tr>
+									<td>&nbsp;</td>
+									<td id="btc66">&nbsp;</td>
+									<td id="btc67">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc68">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc69">&nbsp;</td>
+									<td id="btc70">&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>	
+								<tr>
+									<td id="btc71">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc72">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc73">&nbsp;</td>
+									<td id="btc74">&nbsp;</td>
+									<td id="btc75">&nbsp;</td>
+								</tr>							
+							</table>
+						</div>				
+						<div class="col-md-12">
+							<!-- Bingo card number6 -->						
+							<table>
+								<caption>Bingo card 6</caption>
+								<tr>
+									<td>&nbsp;</td>
+									<td id="btc76">&nbsp;</td>
+									<td id="btc77">&nbsp;</td>
+									<td id="btc78">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc79">&nbsp;</td>
+									<td id="btc80">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td rowspan="3" class="stats"> <span class="statsText">&nbsp;</span></td>
+								</tr>	
+								<tr>
+									<td id="btc81">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc82">&nbsp;</td>
+									<td id="btc83">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc84">&nbsp;</td>
+									<td id="btc85">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>	
+								<tr>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc86">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc87">&nbsp;</td>
+									<td id="btc88">&nbsp;</td>
+									<td>&nbsp;</td>
+									<td id="btc89">&nbsp;</td>
+									<td id="btc90">&nbsp;</td>
+								</tr>							
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">		
+					</div>							
+				</div><!--End row -->
+				<div class="row">
+					<div class="col-md-12">				
+					</div>					
+				</div><!--End row -->
+			</div><!--End container -->
+			
+		</section><!--End about section -->
+
+		<!-- ==============================================
+		FOOTER
+		=============================================== -->	
+		<footer id="main-footer">
+		
+			<div class="container">
+			
+				<div class="row">
+				
+					<div class="col-sm-6 left-col">						
+						<h2>
+							It's not only about what you know,
+							<br/> it's about what you do with what you know !!!					
+						</h2>
+					</div>
+					
+					<div class="col-sm-6 right-col">
+						<a id="mitLicense" data-toggle="collapse" data-target="#demo">Copyright &copy; 2016 Lemaxdigital.com / MIT License</a>
+						<div id="demo" class="collapse">
+							<p>MIT License</p>
+
+							<p>Copyright (c) 2016 Lemaxdigital.com</p>
+
+							<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+							of this software and associated documentation files (the "Software"), to deal
+							in the Software without restriction, including without limitation the rights
+							to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+							copies of the Software, and to permit persons to whom the Software is
+							furnished to do so, subject to the following conditions:</p>
+
+							<p>The above copyright notice and this permission notice shall be included in all
+							copies or substantial portions of the Software.</p>
+
+							<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+							IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+							FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+							AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+							LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+							OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+							SOFTWARE.</p>
+						</div>
+					</div>
+					
+				</div><!-- End row -->
+				
+			</div><!-- End container -->
+			
+		</footer><!-- End footer -->
+
+		<!-- ==============================================
+		SCRIPTS
+		=============================================== -->			
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js">\x3C/script>')</script>	
+		
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/lemaxdigital.js"></script>
+		<script src="js/bingoCardsGenerator.js"></script>
+	</body>
+	
+</html>
