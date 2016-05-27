@@ -1,3 +1,4 @@
+# Bingo Cards Generator App
 The Bingo Cards Generator App will create 6 Bingo Cards from a defined Cards String. Once all cards are produced, you will be ready to Rock and Roll. Just press the "Get a new Number!" button and a random number will appear.
 
 If the displayed number is on your cards then click on it in order to store it as "Marked". Use the card information board to know how much number are left.
